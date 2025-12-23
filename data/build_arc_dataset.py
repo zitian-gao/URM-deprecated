@@ -80,7 +80,7 @@ def grid_hash(grid: np.ndarray):
     assert grid.ndim == 2
     assert grid.dtype == np.uint8
 
-    buffer = [x.to_bytes(1) for x in grid.shape]
+    buffer = [x.to_bytes(1, "big") for x in grid.shape]
     buffer.append(grid.tobytes())
     
     return hashlib.sha256(b"".join(buffer)).hexdigest()
