@@ -18,21 +18,21 @@ wandb login YOUR_API_KEY
 ## Preparing Data
 ```bash
 # ARC-AGI-1
-python -m dataset.build_arc_dataset \
+python -m data.build_arc_dataset \
   --input-file-prefix kaggle/combined/arc-agi \
   --output-dir data/arc1concept-aug-1000 \
   --subsets training evaluation concept \
   --test-set-name evaluation
 
 # ARC-AGI-2
-python -m dataset.build_arc_dataset \
+python -m data.build_arc_dataset \
   --input-file-prefix kaggle/combined/arc-agi \
   --output-dir data/arc2concept-aug-1000 \
   --subsets training2 evaluation2 concept \
   --test-set-name evaluation2
 
 # Sudoku
-python dataset/build_sudoku_dataset.py --output-dir data/sudoku-extreme-1k-aug-1000  --subsample-size 1000 --num-aug 1000
+python data/build_sudoku_dataset.py --output-dir data/sudoku-extreme-1k-aug-1000  --subsample-size 1000 --num-aug 1000
 ```
 
 ## Reproducing ARC-AGI 1 Score
