@@ -1,3 +1,5 @@
+# ⚠️⚠️⚠️ Because of the fork logic, the automatic redirection to UbiquantAI/URM is not working. Please visit https://github.com/UbiquantAI/URM to get the latest code. ⚠️⚠️⚠️
+
 # Universal Reasoning Model
 
 [![paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.14693)
